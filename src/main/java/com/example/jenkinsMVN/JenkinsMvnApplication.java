@@ -8,12 +8,17 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class JenkinsMvnApplication {
-	
+
 	@GetMapping("/")
-	public String hello () {
+	public String hello() {
 		return "Hello!";
 	}
-	
+
+	@GetMapping("/welcome")
+	public String welcome() {
+		return "Welcome";
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(JenkinsMvnApplication.class, args);
 	}
