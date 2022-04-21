@@ -1,3 +1,3 @@
 FROM adoptopenjdk:8-jre-hotspot
-ADD target/jenkinsMVN.jar jenkinsMVN.jar
-ENTRYPOINT ["java", "-jar", "/jenkinsMVN.jar"]
+ADD target/jenkinsmvn.jar jenkinsmvn.jar
+ENTRYPOINT ["java", "-jar", "/jenkinsmvn.jar"]
